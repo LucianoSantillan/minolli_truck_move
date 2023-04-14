@@ -1,0 +1,32 @@
+/* Carousel.module.css */
+.container {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 36px 15px;
+    height: 240px;
+    color: #000;
+    overflow: hidden;
+  }
+  
+  .reviewText {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* Controla la cantidad de líneas visibles */
+    -webkit-box-orient: vertical;
+  }
+  
+  .reviewAuthor {
+    font-size: 14px;
+    /* font-weight: bold; */
+    margin-top: 10px;
+  }
+  

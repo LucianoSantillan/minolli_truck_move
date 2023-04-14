@@ -1,0 +1,18 @@
+.navbar {
+  display: none;
+}
+
+.burgerMenu {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .burgerMenu {
+    display: none;
+  }
+}

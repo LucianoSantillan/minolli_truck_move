@@ -1,0 +1,202 @@
+.banner {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* i need this img to have be a contained img */
+.backgroundImage {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.bannerContent {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  padding: 23px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bannerTextAndBtn {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.shapeOuterChevronRight {
+  display: flex;
+  flex-shrink: 0;
+  height: calc(150px + 4vw);
+  width: calc(150px + 4vw);
+  margin: 25px;
+  background-image: linear-gradient(to bottom right, #ff3cac, #562b7c, var(--primary-color));
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.shapeInnerChevronRight {
+  height: calc(130px + 4vw);
+  width: calc(130px + 4vw);
+  background-size: cover;
+  margin: auto;
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.sayHi {
+  color: #69757d;
+  font-size: 19px;
+}
+
+.whoIAm {
+  color: #212529;
+  font-size: 21px;
+}
+
+.movingText {
+  font-size: 43px;
+  text-align: left;
+}
+
+.circle {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 3px;
+}
+
+.itemsContainer {
+  width: 100%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-align: left;
+}
+
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.whatsappButton {
+  background: #25D366;
+}
+
+.phoneButton {
+  background: #bc7f49;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  text-align: left;
+  margin-right: auto;
+}
+
+.logoIcon {
+  grid-row: 1 / -1;
+  align-self: center;
+  height: 85px;
+  width: 85px;
+  margin-right: 6px;
+}
+
+.mudanzasLogoText{
+  align-self: flex-end;
+  font-size: 25px
+}
+
+.minolliLogoText{
+    font-size: 35px;
+}
+
+.itemText{
+  font-size: 18px;
+}
+
+@media screen and (min-width: 400px) {
+  .logoIcon {
+    height: 130px;
+    width: 130px;
+  }
+
+  .mudanzasLogoText{
+    font-size: 40px
+  }
+
+  .minolliLogoText{
+    font-size: 56px
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .itemText{
+    font-size: 21px;
+  }
+
+  .whatsappButton {
+    font-size: 16px;
+  }
+  
+  .phoneButton {
+    font-size: 16px
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .logoIcon {
+    height: 163px;
+    width: 163px;
+  }
+
+  .mudanzasLogoText{
+    font-size: 50px
+  }
+
+  .minolliLogoText{
+    font-size: 70px
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .itemText{
+    font-size: 25px;
+  }
+
+  .whatsappButton {
+    font-size: 19px;
+  }
+  
+  .phoneButton {
+    font-size: 16px
+  }
+
+  
+}
